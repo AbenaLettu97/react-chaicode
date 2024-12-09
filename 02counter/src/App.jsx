@@ -2,16 +2,18 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-const [counter, setCounter] = useState(0, setCounter)
+const [counter, setCounter] = useState(0)
 
   const addValue = () => {
     setCounter(counter + 1)
-    // setCounter((preCounter) => preCounter + 1)
-    // setCounter((preCounter) => preCounter + 1)
-    // setCounter((preCounter) => preCounter + 1)
+  
   }
-  const removeValue = () => {
+  const subtractValue = () => {
     setCounter(counter - 1)
+  }
+
+  const resetValue = () => {
+    setCounter(0)
   }
 
   return (
@@ -19,8 +21,9 @@ const [counter, setCounter] = useState(0, setCounter)
      <h1>{counter}</h1>
      <h2>Counter value : {counter}</h2>
      <button onClick={addValue}>Add value</button>{" "}
-     <button onClick={removeValue}>Remove value</button>
-     <p>footer: {counter}</p>
+     <button onClick={subtractValue}>Remove value</button>{" "}
+     <button onClick={resetValue}>Reset value</button>{" "}
+
     </>
   )
 }
