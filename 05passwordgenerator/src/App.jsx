@@ -36,13 +36,13 @@ useEffect(() => {
 
 
   return (
-  <div className='w-full max-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-orange-500'>
+  <div className='w-full  max-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-orange-500'>
      <h1 className='text-white text-center my-3'>Password Generator</h1>
      <div className='flex shadow rounded-lg overflow-hidden'>
       <input 
       type='text'
       value={password}
-      className='outline-none w-full py-1 px-3'
+      className='outline-none py-1 px-3'
       placeholder='Password'
       readOnly
       ref={passwordRef}
